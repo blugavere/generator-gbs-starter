@@ -45,7 +45,7 @@ module.exports = yeoman.Base.extend({
         'serve-static': '^1.11.1'
       },
       devDependencies: {
-        'gulp-build-system': '^1.2.0',
+        'gulp-build-system': '^1.3.1',
         gulp: 'github:gulpjs/gulp#4.0',
         sinon: '^1.17.6',
         'gulp-istanbul': '^1.1.1',
@@ -63,8 +63,13 @@ module.exports = yeoman.Base.extend({
     );
 
     this.fs.copy(
-      this.templatePath('**/*'),
-      this.destinationPath('./')
+      this.templatePath('gulpfile.js'),
+      this.destinationPath('gulpfile.js')
+    );
+
+    this.fs.copy(
+      this.templatePath('src/**/*'),
+      this.destinationPath('src/')
     );
   },
 
