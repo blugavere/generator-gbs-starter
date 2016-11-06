@@ -58,12 +58,12 @@ module.exports = yeoman.Base.extend({
     this.fs.writeJSON(this.destinationPath('package.json'), pkg);
 
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('_gitignore'),
       this.destinationPath('.gitignore')
     );
 
     this.fs.copy(
-      this.templatePath('**'),
+      this.templatePath('**/*'),
       this.destinationPath('./')
     );
   },
