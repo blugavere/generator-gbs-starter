@@ -1,6 +1,6 @@
 {
   "name": "generator-gbs-starter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Starter kit for building react-redux-node application using gulp-build-system",
   "homepage": "",
   "author": {
