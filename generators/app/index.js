@@ -45,7 +45,7 @@ module.exports = yeoman.Base.extend({
         'serve-static': '^1.11.1'
       },
       devDependencies: {
-        'gulp-build-system': '^1.3.1',
+        'gulp-build-system': '^1.3.2',
         gulp: 'github:gulpjs/gulp#4.0',
         sinon: '^1.17.6',
         'gulp-istanbul': '^1.1.1',
