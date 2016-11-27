@@ -33,6 +33,7 @@ module.exports = yeoman.Base.extend({
         dev: 'gulp dev'
       },
       dependencies: {
+        axios: '^0.13.1',
         'body-parser': '^1.15.2',
         bootstrap: '^3.3.7',
         chalk: '^1.1.3',
@@ -42,15 +43,25 @@ module.exports = yeoman.Base.extend({
         express: '^4.14.0',
         helmet: '^2.3.0',
         'serve-favicon': '^2.3.0',
-        'serve-static': '^1.11.1'
+        'serve-static': '^1.11.1',
+        'react-bootstrap': '^0.30.7',
+        react: '^15.0.2',
+        'react-dom': '^15.4.1',
+        'react-redux': '^4.4.6',
+        'react-router': '^3.0.0',
+        'react-router-bootstrap': '^0.23.1',
+        redux: '^3.6.0',
+        'redux-form': '^6.2.0',
+        'redux-thunk': '^2.1.0'
       },
       devDependencies: {
+        expect: '^1.20.2',
         'gulp-build-system': '^1.3.2',
         gulp: 'github:gulpjs/gulp#4.0',
         sinon: '^1.17.6',
-        'gulp-istanbul': '^1.1.1',
-        'gulp-nodemon': '^2.2.1',
-        'gulp-exclude-gitignore': '^1.0.0'
+        'redux-devtools': '^3.3.1',
+        'redux-devtools-dock-monitor': '^1.1.1',
+        'redux-devtools-log-monitor': '^1.1.1'
       },
       srcDir: process.cwd()
     };
